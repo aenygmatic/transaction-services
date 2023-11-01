@@ -1,0 +1,17 @@
+spring.application.name: transaction-analytics
+
+server.port: 8081
+
+event:
+  kafka:
+    bootstrap-servers: localhost:29092
+    topic: transaction-updates
+    group-id: transaction-analytics
+
+data:
+  couchbase:
+    connection: couchbase://localhost
+    user: analytics
+    password: analytics
+    bucket: analytics
+

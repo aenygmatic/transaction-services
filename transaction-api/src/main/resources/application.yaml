@@ -1,0 +1,18 @@
+spring.application.name: transaction-api
+
+validation:
+  currencies: HUF,EUR,GBP,USD
+
+event:
+  enabled: true
+  kafka:
+    bootstrap-servers: localhost:29092
+    topic: transaction-updates
+
+data:
+  couchbase:
+    connection: couchbase://localhost
+    user: transactions
+    password: transactions
+    bucket: transactions
+

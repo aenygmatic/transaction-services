@@ -1,0 +1,1 @@
+CREATE PRIMARY INDEX on `default`:`analytics`
