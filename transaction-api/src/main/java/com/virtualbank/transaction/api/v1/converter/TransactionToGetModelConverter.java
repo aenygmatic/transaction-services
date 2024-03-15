@@ -2,7 +2,6 @@ package com.virtualbank.transaction.api.v1.converter;
 
 import com.virtualbank.transaction.api.v1.model.GetTransactionModel;
 import com.virtualbank.transaction.service.model.Transaction;
-
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 

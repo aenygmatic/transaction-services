@@ -11,5 +11,5 @@ public interface TransactionCommandService {
     Transaction modify(Transaction transaction);
 
     Transaction delete(UUID id);
-;
+
 }

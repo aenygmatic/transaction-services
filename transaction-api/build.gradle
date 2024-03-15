@@ -17,7 +17,6 @@ repositories {
 }
 
 
-
 sourceSets {
     integrationtest {
         java {
@@ -42,6 +41,8 @@ dependencies {
     integrationtestImplementation 'org.springframework.boot:spring-boot-starter-test'
     integrationtestImplementation 'org.junit.jupiter:junit-jupiter'
     integrationtestImplementation 'io.rest-assured:rest-assured'
+    integrationtestImplementation 'org.projectlombok:lombok'
+    integrationtestAnnotationProcessor 'org.projectlombok:lombok'
 
 }
 

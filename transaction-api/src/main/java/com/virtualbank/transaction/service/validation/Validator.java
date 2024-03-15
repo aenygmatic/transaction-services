@@ -3,7 +3,6 @@ package com.virtualbank.transaction.service.validation;
 import com.virtualbank.transaction.service.model.Transaction;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface Validator {
 

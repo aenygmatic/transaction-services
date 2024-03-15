@@ -1,8 +1,8 @@
 package com.virtualbank.transaction.analytics.service;
 
 import com.virtualbank.transaction.analytics.service.model.MonetaryAmount;
-import com.virtualbank.transaction.analytics.service.model.Transaction;
 import com.virtualbank.transaction.analytics.service.model.Statistics;
+import com.virtualbank.transaction.analytics.service.model.Transaction;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

@@ -1,8 +1,6 @@
 package com.virtualbank.transaction.api.v1;
 
-import com.virtualbank.transaction.api.v1.model.CreateUpdateTransactionModel;
 import com.virtualbank.transaction.api.v1.model.GetTransactionModel;
-import com.virtualbank.transaction.service.TransactionCommandService;
 import com.virtualbank.transaction.service.TransactionQueryService;
 import com.virtualbank.transaction.service.model.Transaction;
 import lombok.RequiredArgsConstructor;
@@ -10,7 +8,6 @@ import org.springframework.core.convert.converter.Converter;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.URI;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;

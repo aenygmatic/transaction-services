@@ -5,17 +5,18 @@
 ### Couchbase
 
 * Install [Couchbase](https://docs.couchbase.com/server/current/install/install-intro.html)
-* Create buckets `transactons` and `analytics` with the same user and password
+* Create buckets `transactions` and `analytics` with the same user and password
 * Apply the scripts from each services `/couchbase/indexes`
 
 ### Kafka
 
 * Install [Kafka](https://kafka.apache.org/quickstart)
-* The application will try to connect to `localhost:29092` by default
+* The application will try to connect to `localhost:9092` by default
 * Create a topic named `transaction-updates`
-* Create topic`./kafka-topics.sh --create --topic transaction-updates --bootstrap-server localhost:29092`
-* Console consumer for debug `./kafka-console-consumer.sh --topic transaction-updates --from-beginning --bootstrap-server localhost:29092`
-* Delete topic for cleanup `./kafka-topics.sh --zookeeper localhost:22181 --delete --topic transaction-updates`
+* Create topic`./kafka-topics.sh --create --topic transaction-updates --bootstrap-server localhost:9092`
+* Console consumer for
+  debug `./kafka-console-consumer.sh --topic transaction-updates --from-beginning --bootstrap-server localhost:29092`
+* Delete topic for cleanup `./kafka-topics.sh --zookeeper localhost:2181 --delete --topic transaction-updates`
 
 ### Build
 
@@ -29,7 +30,8 @@
 
 ### transaction-api
 
-The transaction-api service is responsible for CRUD operations on transactions and also fires an event to Kafka about the changes.
+The transaction-api service is responsible for CRUD operations on transactions and also fires an event to Kafka about
+the changes.
 
 #### Out-of-scope
 
@@ -42,7 +44,8 @@ The server starts at port `8080`
 
 ### transaction-analytics
 
-The transaction-analytics service is responsible for creating monthly user level analysis based on the transaction event.
+The transaction-analytics service is responsible for creating monthly user level analysis based on the transaction
+event.
 
 #### The analytics contains:
 
